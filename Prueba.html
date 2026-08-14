@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor & Pasión - Restaurante</title>
+    <style>
+        /* Estilos Generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #fcfcfc;
+        }
+
+        /* Hero / Cabecera Principal */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: #ff9f43;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .btn-menu {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff9f43;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-menu:hover {
+            background-color: #e0832b;
+        }
+
+        /* Sección de Especialidades */
+        .especialidades {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .especialidades h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .grid-platillos {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ddd;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-sec h4 {
+            color: #ff9f43;
+            margin-bottom: 10px;
+        }
+
+        .redes a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .redes a:hover {
+            color: #ff9f43;
+        }
+
+        .copyright {
+            border-top: 1px solid #333;
+            padding-top: 15px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Sección Principal (Hero) -->
+    <header class="hero">
+        <h1>Sabor & Pasión</h1>
+        <p>"La autenticidad del buen comer en cada bocado"</p>
+        <a href="menu.html" class="btn-menu">Ver Menú Completo</a>
+    </header>
+
+    <!-- 2. Sección de Especialidades -->
+    <section class="especialidades">
+        <h2>Platillos Destacados</h2>
+        <div class="grid-platillos">
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Costillas a la BBQ">
+                <div class="card-info">
+                    <h3>Costillas a la BBQ</h3>
+                    <p class="precio">$18.50</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80" alt="Pasta Fettuccine">
+                <div class="card-info">
+                    <h3>Fettuccine Alfredo</h3>
+                    <p class="precio">$14.00</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Hamburguesa Artesanal">
+                <div class="card-info">
+                    <h3>Hamburguesa Gourmet</h3>
+                    <p class="precio">$12.50</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. Pie de página (Footer) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-sec">
+                <h4>Dirección</h4>
+                <p>Av. Gastronómica #123, Ciudad Sabor</p>
+            </div>
+            
+            <div class="footer-sec">
+                <h4>Horario</h4>
+                <p>Mar - Dom: 12:00 PM - 10:00 PM</p>
+                <p>Lunes: Cerrado</p>
+            </div>
+
+            <div class="footer-sec">
+                <h4>Síguenos</h4>
+                <div class="redes">
+                    <a href="#">Instagram</a> |
+                    <a href="#">Facebook</a> |
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Sabor & Pasión. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

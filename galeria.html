@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Restaurante</title>
+    <style>
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .galeria-grid figure {
+            margin: 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .galeria-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .galeria-grid figcaption {
+            padding: 10px;
+            font-size: 0.9rem;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galería de Nuestro Restaurante</h1>
+    </header>
+
+    <main>
+        <section class="galeria-grid">
+            <figure>
+                <img src="platillo-estrella.jpg" alt="Lomo de aguja a la parrilla">
+                <figcaption>Nuestro corte estrella de lomo de aguja a la parrilla.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="salon-principal.jpg" alt="Salón comedor principal">
+                <figcaption>Ambiente cálido y acogedor en el salón principal.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="pasta-artesanal.jpg" alt="Fettuccine Alfredo con hierbas">
+                <figcaption>Pasta Fettuccine Alfredo preparada al momento.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="terraza-noche.jpg" alt="Terraza al aire libre de noche">
+                <figcaption>Área de terraza iluminada para cenas románticas.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="postre-volcan.jpg" alt="Volcán de chocolate fundido">
+                <figcaption>Volcán de chocolate acompañado de helado de vainilla.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="evento-musica.jpg" alt="Música en vivo en el restaurante">
+                <figcaption>Noches de música acústica en vivo todos los viernes.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="cocteles-bar.jpg" alt="Barra de cócteles y bebidas">
+                <figcaption>Variedad de bebidas y cócteles preparados en nuestra barra.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="celebracion-privada.jpg" alt="Mesa decorada para evento especial">
+                <figcaption>Montaje especial para celebraciones y eventos privados.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+</body>
+</html>
